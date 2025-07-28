@@ -4,7 +4,7 @@ project(WhoopDiscordIntegration)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(WhoopDiscordIntegration main.cpp)
+add_executable(WhoopDiscordIntegration discord_listener.cpp webhook_server.cpp main.cpp)
 
 # Define some handy Social SDK variables
 set(DISCORD_SDK_ROOT "${CMAKE_SOURCE_DIR}/lib")
